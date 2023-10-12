@@ -69,7 +69,7 @@ function extractNameFromTemplate(value) {
   const words = value.split(' ');  
   const firstName = words[1];
   const lastName = words[2];  
-  const fullName = `${firstName} ${lastName}`;
+  const fullName = `${firstName} ${lastName.slice(0, -1)}`;
   return fullName;
 }
 
